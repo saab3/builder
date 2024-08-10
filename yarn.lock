@@ -107,12 +107,12 @@
     prettier "^2.8.8"
     typescript "^5.1.6"
 
-"@builder.io/react@^4.0.1":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@builder.io/react/-/react-4.0.2.tgz#01cd47c59d58ae5655728c262abbbb320cf35ba2"
-  integrity sha512-9WsBZLXJgJdiRRQnBY2lXOWs/7xg2qyUbYyeQfkZAZLYR3ub7AfpXUmQhoCLl2WHQUZBYOAHlJH4pQGM7C/nXA==
+"@builder.io/react@^4.0.4":
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@builder.io/react/-/react-4.0.4.tgz#37a422edf65b1df6d3eda9bf438333978565603a"
+  integrity sha512-imCB62olCjkX+770zOhfui7E5yw5+Y4hkBP4HfGDG9FTu4L+hYB8bQiF+g7LUkczwyhLigC1CrZheAmNbpce/A==
   dependencies:
-    "@builder.io/sdk" "2.2.7"
+    "@builder.io/sdk" "2.2.9"
     "@emotion/core" "^10.0.17"
     hash-sum "^2.0.0"
     isolated-vm "^5.0.0"
@@ -121,10 +121,10 @@
     node-fetch "^2.6.1"
     prop-types "^15.7.2"
 
-"@builder.io/sdk@2.2.7", "@builder.io/sdk@^2.2.6":
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/@builder.io/sdk/-/sdk-2.2.7.tgz#89e54b1e1c58be8d4b328b7d998800a7b6cb8cba"
-  integrity sha512-j19aF+DQPDBqbBdtJD8pMph705/pNU9aan9EUV7E/kC25eKeBmCvWqvRNNXOr1qKKNhGYidBnWPkMKTbx+3g9w==
+"@builder.io/sdk@2.2.9", "@builder.io/sdk@^2.2.9":
+  version "2.2.9"
+  resolved "https://registry.yarnpkg.com/@builder.io/sdk/-/sdk-2.2.9.tgz#33f91266d161f8eeff2c527bdef4d0e5effeb4ee"
+  integrity sha512-B9DUNKYIkGXzvEm4ciZNjTQ6cdfuZXZ0gViKEXeAiIR/L6aDXdCyIlcPFtBOepVZQiI5fZNQAlbWY1pDgaW4BA==
   dependencies:
     hash-sum "^2.0.0"
     node-fetch "^2.3.0"
