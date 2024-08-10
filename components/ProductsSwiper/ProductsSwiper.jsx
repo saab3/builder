@@ -12,6 +12,6 @@ export default function ProductsSwiper() {
   
  
   return (
-    <div>{JSON.stringify(products?.data?.products)}</div> 
+    <div className='text-2xl text-white'>{JSON.stringify(products?.data?.products)}</div> 
   )
 }
