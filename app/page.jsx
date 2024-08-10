@@ -6,7 +6,7 @@ import { RenderBuilderContent } from "@/components/builder";
 // Replace with your Public API Key
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
-export default async function Page(props) {
+export default async function Page(props, {content}) {
   const homepageContent = await builder
     .get('homepage', {
       prerender: false,
@@ -16,7 +16,7 @@ export default async function Page(props) {
   return (
     <>
       <Head>
-        <title>{props?.content?.data.title}</title>
+        <title>{content?.data.title}</title>
       </Head>
       {/* Render the Builder page */}
       <RenderBuilderContent 

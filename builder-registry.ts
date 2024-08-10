@@ -21,10 +21,10 @@ Builder.registerComponent(V4tech, {
   name: "V4tech",
 });
 
-Builder.registerComponent(ProductsSwiper, {
-  name: "ProductsSwiper",
-});
-
 Builder.registerComponent(RenderBuilderContent, {
   name: "RenderBuilderContent",
+});
+
+Builder.registerComponent(ProductsSwiper, {
+  name: "ProductsSwiper",
 });
