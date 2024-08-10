@@ -12,6 +12,6 @@ export default function ProductsSwiper() {
   
  
   return (
-    <div>{products?.data?.products?.length}</div> 
+    <div>{JSON.stringify(products?.data?.products)}</div> 
   )
 }
