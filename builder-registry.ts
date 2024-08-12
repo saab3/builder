@@ -1,6 +1,7 @@
 "use client";
 import { builder, Builder } from "@builder.io/react";
 import Counter from "./components/Counter/Counter";
+import { CustomDataComponent } from "./components/CustomDataProvider/CustomDataProvider";
 import ProductsSwiper from "./components/ProductsSwiper/ProductsSwiper";
 import { RenderBuilderContent } from "./components/RenderBuilderContent/RenderBuilderContent";
 import V4tech from "./components/V4tech/V4tech";
@@ -27,4 +28,15 @@ Builder.registerComponent(RenderBuilderContent, {
 
 Builder.registerComponent(ProductsSwiper, {
   name: "ProductsSwiper",
+});
+
+Builder.registerComponent(CustomDataComponent, {
+  name: "CustomDataComponent",
+  inputs: [
+    {
+      name: 'apiUrl',
+      type: 'string',
+      required: true,
+    },
+  ],
 });
