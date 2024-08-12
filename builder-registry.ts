@@ -2,6 +2,7 @@
 import { builder, Builder } from "@builder.io/react";
 import Counter from "./components/Counter/Counter";
 import { CustomDataComponent } from "./components/CustomDataProvider/CustomDataProvider";
+import ProductCard from "./components/ProductCard/ProductCard";
 import ProductsSwiper from "./components/ProductsSwiper/ProductsSwiper";
 import { RenderBuilderContent } from "./components/RenderBuilderContent/RenderBuilderContent";
 import V4tech from "./components/V4tech/V4tech";
@@ -34,9 +35,13 @@ Builder.registerComponent(CustomDataComponent, {
   name: "CustomDataComponent",
   inputs: [
     {
-      name: 'catId',
-      type: 'string',
+      name: "catId",
+      type: "string",
       required: true,
     },
   ],
+});
+
+Builder.registerComponent(ProductCard, {
+  name: "ProductCard",
 });
