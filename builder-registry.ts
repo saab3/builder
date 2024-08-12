@@ -34,7 +34,7 @@ Builder.registerComponent(CustomDataComponent, {
   name: "CustomDataComponent",
   inputs: [
     {
-      name: 'apiUrl',
+      name: 'catId',
       type: 'string',
       required: true,
     },

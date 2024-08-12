@@ -8,9 +8,9 @@ export function CustomDataComponent(props) {
       const headers = {
         'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjQ1Mzk5NzAsInN0b3JlTmFtZSI6ImVuIn0.cqTzXWyPPAP5NHpSX3UndP8mHa74ptZ9_WERa3VM03A'
       };
-
+      const url = `https://api-staging.ops.blackbox.com.sa/api/v1/search/products/facets/category/${props.catId}?pageNo=1&pageSize=10&sortBy=price&sortDir=desc&region=all`
       try {
-        const response = await fetch(props.apiUrl, { headers });
+        const response = await fetch(url, { headers });
         const result = await response.json();
         setData(result);
       } catch (error) {
@@ -19,7 +19,8 @@ export function CustomDataComponent(props) {
     }
 
     fetchData();
-  }, [props.apiUrl]);
+  }, [props.catId]);
+
 
   if (!data) return <div>Loading...</div>;
 
@@ -27,7 +28,7 @@ export function CustomDataComponent(props) {
   return (
     <div>
       {/* Use the data here */}
-      {JSON.stringify(data)}
+      
     </div>
   );
 }
