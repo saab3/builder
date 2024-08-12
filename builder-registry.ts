@@ -37,4 +37,10 @@ Builder.registerComponent(ProductCard, {
 
 Builder.registerComponent(CustomDataComponent, {
   name: "CustomDataComponent",
+  inputs: [
+    {
+      name: "catId",
+      type: "number",
+    },
+  ],
 });
