@@ -31,17 +31,10 @@ Builder.registerComponent(ProductsSwiper, {
   name: "ProductsSwiper",
 });
 
-Builder.registerComponent(CustomDataComponent, {
-  name: "CustomDataComponent",
-  inputs: [
-    {
-      name: "catId",
-      type: "string",
-      required: true,
-    },
-  ],
-});
-
 Builder.registerComponent(ProductCard, {
   name: "ProductCard",
+});
+
+Builder.registerComponent(CustomDataComponent, {
+  name: "CustomDataComponent",
 });
